@@ -1,0 +1,31 @@
+#block{
+    border-style:ridge;
+    margin: 10px;
+    padding: 10px;
+    font-family: monospace;
+    display:grid;
+    grid-template-columns: repeat(4,100px);
+    grid-gap: 10px 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+h2{
+  display: inline-block;
+}
+
+img {
+  max-width:100%;
+  height: 100%;
+  display: none;
+}
+
+#block>div{
+background-color: pink;
+width:100px;
+height:100px;
+}
+
+#score{
+display: inline;
+}
