@@ -4,7 +4,9 @@
   "description": "testing express website",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "install": "npm i",
+    "deploy": "node api/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
     "web"
@@ -12,6 +14,7 @@
   "author": "vivek",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "vercel": "^33.6.2"
   }
 }
