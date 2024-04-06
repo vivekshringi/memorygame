@@ -50,7 +50,7 @@ fetch("/numbers")
           secondBlock.style.display="none";
           firstValue = undefined;
           secondValue = undefined;
-        }, "1000");
+        }, "100");
 
       }
     });
