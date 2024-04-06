@@ -23,21 +23,27 @@ fetch("/numbers")
     image.setAttribute("id",`image${index}`);
     block.appendChild(image);
     block.addEventListener('click', () => {
-       count++;
-       document.getElementById('count').innerText=count;
        block.firstChild.style.display="block";
       if(firstValue==undefined){
         firstValue = block.firstChild.src;
         firstBlock = block.firstChild;
+        firstIndex = index;
         console.log("firstValue "+firstValue);
+        count++;
+        document.getElementById('count').innerText=count;
+        console.log("First click "+index);
         return;
       }
-      if(secondValue==undefined){
+      if(firstValue!=undefined && secondValue==undefined){
         secondValue = block.firstChild.src;
         secondBlock = block.firstChild;
+        secondIndex = index;
+        count++;
+        document.getElementById('count').innerText=count;
         console.log("SecondValue "+secondValue);
+        console.log("Second click "+index);
       }
-      if(firstValue==secondValue){
+      if(firstValue==secondValue && firstIndex!=secondIndex){
         console.log("Wonderful");
         match++;
         document.getElementById('match').innerText=match;
