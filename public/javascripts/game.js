@@ -49,6 +49,13 @@ fetch("/numbers")
         document.getElementById('match').innerText=match;
         firstValue = undefined;
         secondValue = undefined;
+        if(match==8){
+          const button = document.createElement('button');
+          button.innerText = "Restart the game";
+          button.addEventListener("click",()=>{location.reload();})
+          document.getElementById("result").innerText = "You won the match!"
+          document.getElementById("result").append(button);
+        }
       }
       else{
         setTimeout(() => {
