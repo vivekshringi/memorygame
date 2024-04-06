@@ -1,13 +1,18 @@
 <!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <html>
 <head>
 <title>Memory Game</title>
 </head>
 <body>
-<link rel="stylesheet" type="text/css" href="/stylesheets/game.css" />
-<script type="text/javascript" src="/javascripts/game.js"></script>  
+<link rel="stylesheet" type="text/css" href="../stylesheets/game.css" />
+<script type="text/javascript" src="../javascripts/game.js"></script>  
 <h2>Lets play a memory game!</h2>
 <p>To start the game click on any block and explore the picture behind it. if two consecutive pictures matches it will permanently be displayed</p>
+<div id="score">
+  <label>Count : <div id="count">0</div></label>
+  <label>Match : <div id="match">0</div></label>
+</div>
 <div id="block">
     <div id = "0"></div>
     <div id = "1"></div>
@@ -26,9 +31,6 @@
     <div id = "14"></div>
     <div id = "15"></div>
 </div>
-<div id="score">
-  <label>Count:<div id="count">0</div></label>
-  <label>Match:<div id="match">0</div></label>
-</div>
+
 </body>
 </html>

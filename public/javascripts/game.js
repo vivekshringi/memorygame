@@ -19,7 +19,7 @@ fetch("/numbers")
     for (let index = 0; index < res.numbers.length ; index++) {
     let block = document.querySelector(`[id='${index}']`)
     let image = document.createElement("img");
-    image.src = `/images/${res.numbers[index]}${random}.svg`;
+    image.src = `../images/${res.numbers[index]}${random}.svg`;
     image.setAttribute("id",`image${index}`);
     block.appendChild(image);
     block.addEventListener('click', () => {

@@ -4,7 +4,7 @@
   "description": "testing express website",
   "main": "index.js",
   "scripts": {
-    "deploy": "node api/index.ts",
+    "deploy": "node api/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
